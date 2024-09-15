@@ -4,4 +4,4 @@ WORKDIR /usr/local/apache2/htdocs/
 
 COPY . .
 
-EXPOSE 8006
+EXPOSE 80
