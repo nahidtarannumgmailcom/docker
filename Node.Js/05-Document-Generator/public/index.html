@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label, textarea, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generate PDF Document</h1>
+    <form action="/generate-document" method="POST">
+        <label for="title">Document Title:</label>
+        <input type="text" id="title" name="title" placeholder="Enter the title" required>
+        
+        <label for="content">Document Content:</label>
+        <textarea id="content" name="content" rows="10" placeholder="Enter the content" required></textarea>
+        
+        <button type="submit">Generate PDF</button>
+    </form>
+</body>
+</html>
+

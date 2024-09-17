@@ -1,0 +1,16 @@
+{
+  "name": "document-generator",
+  "version": "1.0.0",
+  "description": "Generate PDFs via Express and Node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Abhishek",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pdfkit": "^0.14.0"
+  }
+}
+
