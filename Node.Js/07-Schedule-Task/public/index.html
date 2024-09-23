@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="theme-toggle">
+            <button id="toggle-theme">🌙</button>
+        </div>
+        <h1>Task Scheduler</h1>
+        <form id="task-form">
+            <label for="task-name">Task Name:</label>
+            <input type="text" id="task-name" required>
+
+            <label for="task-issued-date">Task Issued Date:</label>
+            <input type="date" id="task-issued-date" required>
+
+            <label for="task-completion-date">Task Completion Date:</label>
+            <input type="date" id="task-completion-date" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" required></textarea>
+
+            <button type="submit">Assign Task</button>
+        </form>
+
+        <table id="tasks-table">
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Issued Date</th>
+                    <th>Completion Date</th>
+                    <th>Description</th>
+                    <th>Complete</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Tasks will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

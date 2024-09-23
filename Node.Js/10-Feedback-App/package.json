@@ -1,0 +1,12 @@
+{
+  "name": "Data-Volume-Example",
+  "version": "1.0.0",
+  "description": "Sharing Feedback",
+  "main": "server.js",
+  "author": "Abhishek",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
